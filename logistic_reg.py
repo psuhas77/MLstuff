@@ -30,10 +30,11 @@ def grad_desc(X,Y,theta,alpha,iters):
 
 
 def accuracy(X,Y,thetanew):
-
+    
+    
     finalar=[]
     for i in X:
-        if i*(thetanew.T)>=0.5:
+        if i*thetanew>=0.5:
             finalar.append(1)
 
         else:
@@ -49,5 +50,7 @@ def accuracy(X,Y,thetanew):
     acc=numerror/(len(X))
     return acc,finalar
     
-    
+def cost_graph(costarr):
+    plt.plot(costarr,np.arange(len(costarr)))
+    plt.show()
     
