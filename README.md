@@ -1,2 +1,2 @@
 # MLstuff
-random basic ML stuff
+Basic Machine Learning
